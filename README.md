@@ -24,10 +24,12 @@ The dataset includes the price change percentage of each cryptocurrency over the
 ![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/5e093dc2-ff24-4aa7-b898-0e45216dd153)
 
 
+
 3. **Cluster Cryptocurrencies using the KMeans Algorithm.**
     * Now that the data is preprocessed and the optimal value of k is determined, the KMeans clustering algorithm can be fitted to the scaled data. The model will then make predictions on which clustergroup each cryptocurrency belongs to based on the data available, which in this case is the price change percentage over the intervals listed above. 
 
 ![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/27079bb3-e255-4dd4-9eb4-75b4006a79b6)
+
 
 
 4. **Plot the results.**
