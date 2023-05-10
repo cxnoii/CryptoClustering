@@ -12,6 +12,6 @@ The dataset includes the price change percentage of each cryptocurrency over the
 * 60 days
 
 ## Machine Learning Process
-1. Preprocess the data.
+1. Preprocessing the data using a standard scalar. The application of standard scalar removes any bias that are potentially created by variables measured with different scales. Each column will have a value between 0 and 1, with a mean of 0 and a standard deviation of 1. 
 
 ![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/fd621a7f-d246-4217-a1dc-7ec6ff4ba629)
