@@ -11,3 +11,7 @@ The dataset includes the price change percentage of each cryptocurrency over the
 * 30 days 
 * 60 days
 
+## Machine Learning Process
+1. Preprocess the data.
+
+![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/fd621a7f-d246-4217-a1dc-7ec6ff4ba629)
