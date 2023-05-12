@@ -44,5 +44,4 @@ Next, a PCA model will be created in order to reduce the amount of features that
 
 <img width="613" alt="Screenshot 2023-05-11 at 6 44 40 PM" src="https://github.com/cxnoii/CryptoClustering/assets/114107454/e3e36f40-2db0-465d-a6da-d40c0a696324">
 
-The total explained variance of the model was 0.895. 
 
