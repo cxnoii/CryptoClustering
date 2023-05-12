@@ -4,7 +4,7 @@
 The purpose of this project is to analyze cryptocurrencies and create cluster groups based on price change percentages over a variety of different time spans. Cluster groups will be determined using the KMeans algorithm where the optimal number of groups, k, will be determined using the elbow method. This project will also utilize Principal Component Analysis (PCA) in order to find the optimal number of features to include in the KMeans clustering algorithm.
 
 ## Data
-The dataset includes the price change percentage of each cryptocurrency over the following intervals:
+The dataset includes the _price change percentage_ of each cryptocurrency over the following intervals:
 * 24 hours
 * 7 days
 * 14 days
@@ -26,7 +26,7 @@ The dataset includes the price change percentage of each cryptocurrency over the
 
 
 3. **Cluster Cryptocurrencies using the KMeans Algorithm.**
-    * Now that the data is preprocessed and the optimal value of k is determined, the KMeans clustering algorithm can be fitted to the scaled data. The model will then make predictions on which clustergroup each cryptocurrency belongs to based on the data available, which in this case is the price change percentage over the intervals listed above. 
+    * Now that the data is preprocessed and the optimal value of k is determined, the KMeans clustering algorithm can be fitted to the scaled data. The model will then make predictions on which cluster group each cryptocurrency belongs to based on the data available, which in this case is the price change percentage over the intervals listed above. 
 
 ![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/27079bb3-e255-4dd4-9eb4-75b4006a79b6)
 
