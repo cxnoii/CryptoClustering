@@ -52,6 +52,9 @@ Next, a PCA model will be created in order to reduce the amount of features that
         * price_change_percentage_7d
         * price_change_percentage_14d
 
+
+## PCA Results
+
 <img width="653" alt="Screenshot 2023-05-11 at 6 55 44 PM" src="https://github.com/cxnoii/CryptoClustering/assets/114107454/34989b78-29c3-4c4e-8b33-340ea684439c">
 
 Based on the results of the KMeans clustering algorithm using PCA data, we can see that the cluster groups are more clearly defined. The two coins that have been placed in the their own cluster group, celcius and ethlend, are now very apart from the two cluster groups where the majority lie. With the original scaled data, ethlend was placed quite close to one of the larger cluster groups, however, now considering only PC's we can see the distinction. Upon further inspection we can also see the clear divide between the larger cluster groups.
