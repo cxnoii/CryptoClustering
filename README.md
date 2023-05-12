@@ -45,3 +45,13 @@ Next, a PCA model will be created in order to reduce the amount of features that
 <img width="613" alt="Screenshot 2023-05-11 at 6 44 40 PM" src="https://github.com/cxnoii/CryptoClustering/assets/114107454/e3e36f40-2db0-465d-a6da-d40c0a696324">
 
 
+5. Repeat 2 - 4 with **PCA data.**
+    * The optimal value of k was still k = 4, when using inertia values associated with the PCA model. 
+    * Principal Components:
+        * price_change_percentage_24h
+        * price_change_percentage_7d
+        * price_change_percentage_14d
+
+<img width="653" alt="Screenshot 2023-05-11 at 6 55 44 PM" src="https://github.com/cxnoii/CryptoClustering/assets/114107454/34989b78-29c3-4c4e-8b33-340ea684439c">
+
+
