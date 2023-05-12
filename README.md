@@ -35,3 +35,14 @@ The dataset includes the _price change percentage_ of each cryptocurrency over t
 4. **Plot the results.**
  
 ![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/83b8ba98-4544-435b-bc45-88307de602cc)
+
+From the graph, there are two cluster groups with only one cryptocurrency. Celcius degree token is the only coin in cluster group 1 and ethlend is the only coin in cluster group 3. 
+
+
+## Principal Component Analysis (PCA) 
+Next, a PCA model will be created in order to reduce the amount of features that will be considered in the KMeans algorithm, while maximizing the explained variance. Because we are reducing the number of features, this will help reduce the noise in the dataset that could potentially cause the model to be overfitted to a certain feature. Additionally, because there are less features to consider, the performance of the model will also be improved. The PCA model was intilized with n_components = 3.
+
+<img width="613" alt="Screenshot 2023-05-11 at 6 44 40 PM" src="https://github.com/cxnoii/CryptoClustering/assets/114107454/e3e36f40-2db0-465d-a6da-d40c0a696324">
+
+The total explained variance of the model was 0.895. 
+
