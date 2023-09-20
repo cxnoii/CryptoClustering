@@ -72,7 +72,8 @@ elbow_df.head()
 |   6 |   27.619  |
 |   7 |   21.1828 |
 
-With the calculated inertia values, we can plot these on a graph in order to manually determine the elbow of the graph. Based on the graph, the best value for k=4.
+With the calculated inertia values, we can plot these on a graph in order to manually determine the elbow of the graph. Based on the graph, the best value for k=4.\
+
 ![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/5e093dc2-ff24-4aa7-b898-0e45216dd153)
 
 
@@ -104,8 +105,10 @@ df_market_data_predictions.head(3)
 
 
 4. **Plot the results.**
- 
-![image](https://github.com/cxnoii/CryptoClustering/assets/114107454/83b8ba98-4544-435b-bc45-88307de602cc)
+
+ <p align="center>
+<img src="https://github.com/cxnoii/CryptoClustering/assets/114107454/83b8ba98-4544-435b-bc45-88307de602cc">
+</p>
 
 From the graph, there are two cluster groups with only one cryptocurrency. Celcius degree token is the only coin in cluster group 1 and ethlend is the only coin in cluster group 3. 
 
@@ -113,8 +116,22 @@ From the graph, there are two cluster groups with only one cryptocurrency. Celci
 ## Principal Component Analysis (PCA) 
 Next, a PCA model will be created in order to reduce the amount of features that will be considered in the KMeans algorithm, while maximizing the explained variance. Because we are reducing the number of features, this will help reduce the noise in the dataset that could potentially cause the model to be overfitted to a certain feature. Additionally, because there are less features to consider, the performance of the model will also be improved. The PCA model was intilized with n_components = 3.
 
-<img width="613" alt="Screenshot 2023-05-11 at 6 44 40 PM" src="https://github.com/cxnoii/CryptoClustering/assets/114107454/e3e36f40-2db0-465d-a6da-d40c0a696324">
 
+```python
+#Creating a PCA model instance with `n_components=3`.
+pca = PCA(n_components=3)
+pca_model = pca.fit_transform(df_market_data_scaled)
+pca_model[0:5]
+
+#Retrieving the explained variance to determine how much information can be attributed to each principal component.
+pca_variance = pca.explained_variance_ratio_
+
+variance_total = numpy.sum(pca_variance)
+print(f'The total explained variance of the 3 components is: {variance_total}')
+
+output:
+The total explained variance of the 3 components is: 0.8950316570309841
+```
 
 5. Repeat 2 - 4 with **PCA data.**
     * The optimal value of k was still k = 4, when using inertia values associated with the PCA model. 
